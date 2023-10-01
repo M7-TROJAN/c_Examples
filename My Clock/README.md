@@ -1,8 +1,8 @@
 # MyClock
 
-Author: Mahmoud Mohamed
-LinkedIn: [Mahmoud Mohamed](https://www.linkedin.com/in/mahmoud-mohamed-abd/)
-Email: mahmoud.abdalaziz@outlook.com
+- Author: Mahmoud Mohamed
+- LinkedIn: [Mahmoud Mohamed](https://www.linkedin.com/in/mahmoud-mohamed-abd/)
+- Email: mahmoud.abdalaziz@outlook.com
 
 MyClock is a simple console-based clock application written in C++ that offers two main features:
 
