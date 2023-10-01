@@ -37,39 +37,6 @@ int main()
 //   25 = 00011001
 //   35 = 00100011
 //  XOR = 00111010
-//
-//
-// How does applying XOR operators in this sequence swap X and Y?  Let's
-// breakdown the algorithm into 3 steps, and keep in mind which bits (x or y
-// bits) may change at each step.
-//
-//   1) x = x ^ y    - x bits may change
-//   2) y = x ^ y    - y bits may change
-//   3) x = x ^ y    - x bits may change
-//
-// Knowing that the XOR operator works on each bit individually in X and Y,
-// let's see the effect of the 4 possible combinations of X and Y values
-// after applying each step of the algorithm:
-//
-//      X:0  Y:0
-//   1) X:0  Y:0
-//   2) X:0  Y:0
-//   3) X:0  Y:0
-//
-//      X:1  Y:1
-//   1) X:0  Y:1
-//   2) X:0  Y:1
-//   3) X:1  Y:1
-//
-//      X:0  Y:1
-//   1) X:1  Y:1
-//   2) X:1  Y:0
-//   3) X:1  Y:0
-//
-//      X:1  Y:0
-//   1) X:1  Y:0
-//   2) X:1  Y:1
-//   3) X:0  Y:1
-//
+
 // In all cases, X and Y end up swapping values (at the level of each bit)!
 // Then applying this to all bits ends up swapping the entire values.
