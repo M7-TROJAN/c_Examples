@@ -1,20 +1,16 @@
-// Example of how to move all the zeros in an array to the end of
-
 #include <stdio.h>
 
 void shift_zeros(int array[], int length);
 
 int main(void)
 {
-    // This is what the array data[] should look like after moving all zeros to
-    // the end:   2,5,6,7,4,7,0,0,0,0
     int data[] = {2, 0, 5, 6, 0, 0, 7, 0, 4, 7};
     int length = 10;
 
-    // call the function to shift the zeros to the end of the array
     shift_zeros(data, length);
 
     // output the array
+    // This is what the array data[] should look like after moving all zeros to the end: 2,5,6,7,4,7,0,0,0,0
     for (int i = 0; i < length; i++)
         printf("%d ", data[i]);
     printf("\n");
@@ -25,12 +21,7 @@ int main(void)
 // moves the zeros in array with the given length to the end of the array
 void shift_zeros(int array[], int length)
 {
-    // We loop through the array with two counter variables... counter variable
-    // i will let us look at each element in the array, and the count variable
-    // will let us re-write non-zero elements to the front of the array.  We only
-    // write the element at index i to the array at index count, as well as
-    // increment count, when the element at index i is non-zero.  This has the
-    // effect of shifting up all the non-zero elements to the front of the array.
+
     int count = 0;
     for (int i = 0; i < length; i++)
     {
